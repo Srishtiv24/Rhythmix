@@ -1,0 +1,172 @@
+body{
+    font-family: 'montserrat',sans-serif;
+    background: black;
+    color:white;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul
+{  height:65px;
+   display:flex;
+   list-style: none;
+   background-color:#31326F;
+   align-items: center;
+}
+
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.brand img
+{
+    padding: 0 8px;
+}
+nav ul li
+{
+    padding: 0 12px;
+}
+.content
+{   
+    position: relative;
+    height: 100vh;
+    
+} 
+.bottom
+{
+position: absolute;
+height:100px;
+background-color:#5D2F77;
+bottom: 0;
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+input[type="range"] {
+    width: 80vw; /* Change width */
+    accent-color: #fff; /* Changes thumb and track color in modern browsers */
+    display: flex;
+    margin-bottom:1rem;
+    cursor: pointer;
+  }
+h2{
+    padding: 1rem;
+}
+.container
+{
+    background-image: url(bg.jpg);
+    width:70%;
+    background-size: cover;       /* Ensures the image covers the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height:77%;
+    margin: 0 auto;
+    border-radius: 12px;
+    
+}
+
+.icons i
+{
+    font-size: 2rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+}
+
+.song-list
+{ width:360px;
+
+}
+.song-item
+{
+    display: flex;
+    background-color: #5D2F77;
+    justify-content:space-between;
+    height:50px;
+    align-items: center;
+    padding: 5px 20px;
+    margin:12.5px 0;
+    border-radius: 34px;
+}
+.song-item img
+{   width:43px;
+    border-radius: 34px;
+}
+
+.time-stamp+ i 
+{
+   margin-left:10px;
+   cursor: pointer;
+}
+
+.bottom .song-info img
+{
+    width:100px;
+    height:80px;
+    opacity:0;
+    transition: opacity 0.8s ease-in;
+   
+}
+
+.bottom .song-info
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left:9.5vw;
+   margin-top:1.5rem;
+   font-size: 14px;
+}
+
+@media (max-width: 450px) {
+    .container {
+        background: url(""); /* Empty URL, no image will load */
+        justify-content: center; /* Aligns content to the start of the flex container */
+        width: 80%;
+        align-items: center;
+        padding: 1.5rem 0; 
+
+    }
+     .song-item
+     {
+         margin : 1.2rem 0;
+     }
+
+     h2{
+        font-size: 16px;
+     }
+
+     
+.bottom
+{
+height:160px;
+}
+
+
+.bottom .song-info
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: -12px;
+   margin-top:1.5rem;
+}
+
+
+input[type="range"] {
+   position: relative;
+   top: -16px;
+   margin-bottom:0.2rem;
+
+
+  }
+
+}
