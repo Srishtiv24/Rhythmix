@@ -1,4 +1,3 @@
 /*script added
   functions
-  future work
 */
